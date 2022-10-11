@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: #8A7350;
+}
+.fa{
+    position: absolute;
+    color: white;
+}
+.fa:hover{
+    color:rgb(162, 128, 27);
+}
+.icons{
+    display: inline-block;
+} 
+
+.fa-heart{
+    right: 64px;
+}
+
+.fa-user{
+
+    right: 22px;
+}
+.hero-bg{
+    background-image: url(./img/travel2.jpg);
+    background-size: 1500px 1000px;
+    background-repeat: no-repeat;
+    background-position: 30% 70%;
+    padding-bottom: 4em;
+    text-align: center;
+}
+.hero-bg a{
+    text-decoration: none;
+    color: rgb(8, 61, 91);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+header{
+    padding: 1em 0;
+}
+section{
+    margin: 0 1em;
+}
+h1 span{
+    text-transform: uppercase;
+    font-size:1.5rem ;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+h1{
+font-size: 2.5rem;
+margin: 2em 0em 1.2em;
+}
+h1 span::before{
+    content: ' ';
+    position: absolute;
+    width: 2.5em;
+    background-color: rgb(180,118,127);
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left:-.05em ;
+}
+.hero-bg p{
+    font-weight: bold;
+    line-height: 2em;
+    margin: 0 1em 3em;
+    padding-bottom:2em ;
+}
+.form-container{
+    background-color: white;
+    opacity: 0.9;
+    padding: 2em;
+    margin: -1em;
+}
+label{
+    color: rgb(7, 52, 67);
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1em ;
+}
+input[type=text]{
+    border: 1px solid #04301e ;
+    width: 100%;
+    padding: .7em;
+    border-radius: .4em;
+    padding-top: 1.2em;
+}
+.form-container p{
+    color: gray;
+    font-size:.9em ;
+    margin-top: .3em;
+    margin-bottom: 1.5em;
+}
+input[type=button]{
+    background-color: rgb(49,2,10);
+    width: 100%;
+    padding: 1em 0;
+    border-radius: .4em;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    cursor: pointer;
+    border: none;
+}
+input[type=button]:hover{
+    background-color: rgb(26,0,5); 
+}
+.authentic{
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+h2{
+    text-transform: uppercase;
+    position: relative;
+}
+h2 span::before{
+    content: ' ';
+    position: absolute;
+    width: 7em;
+    background-color: rgb(180,118,127);
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left:-.05em ;
+}
+.left-col{
+    text-align: center;
+    margin: 3em 1em ;
+}
+p{
+    line-height: 2em;
+}
+@media (min-width: 730px){
+    section{
+        margin:0 4em ;
+    }
+}
+@media(min-width: 930px){
+    .hero-bg{
+        text-align: left;
+    }
+    .hero-bg p{
+        margin:0 0 3em ;
+        margin-bottom: 0;
+    }
+    .hero-bg section{
+        width: 65%;
+    }
+    .form-container{
+        margin: 2em 0 0;
+        padding: 2em;
+        border-radius: .5em;
+        box-shadow: 10px 10px 10px rgb(0,0,0,0.5);
+    }
+    form{
+        display: flex;
+    }
+    .form-left{
+        width: 75%;
+    }
+    input[type=button]{
+        height: 3.2em;
+        font-size: 1.1em;
+        margin-left: 1em;
+        margin-top: 2.7em;
+        padding: .8em 0;
+        width: 40%;
+    }
+    .form-container p{
+        padding-bottom: .7px;
+    }
+    section.authentic{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    .left-col{
+        text-align: left;
+        padding: 0 10% ;
+        align-self: center;
+    }
+}
+.top{
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
