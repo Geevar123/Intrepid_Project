@@ -349,6 +349,7 @@ input[type=button]:hover{
 .users-feedback h1{
     text-align: center;
     padding-bottom: 20px;
+    display: grid;
 }
 .user-review{
     text-align: center;
